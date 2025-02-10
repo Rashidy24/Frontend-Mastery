@@ -6,56 +6,212 @@
     <meta name="description" 
     content=" Get instant access to the ultimate HTML and CSS cheat sheet and take your frontend development skills to the next level.">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <link rel="website icon" href="assets/Imgs/fav (2).jpg" type="png/svg + xml">
     <link rel="stylesheet" href="assets/Css/all.min.css">
     <link rel="stylesheet" href="assets/Css/master.css">
 </head>
 <body>
 
-
+<!-- Page Pre Loader -->
 <div class="pre-loader" data-preloader>
-    <div class="terminal-loader">
-        <div class="terminal-header">
-          <div class="terminal-title">Status</div>
-          <div class="terminal-controls">
-            <div class="control close"></div>
-            <div class="control minimize"></div>
-            <div class="control maximize"></div>
-          </div>
-        </div> 
-        <div class="text">Loading...</div>
-    </div>
+  <div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </div>
 
+<!-- Short Header -->
 <nav class="hidden-header">
+
   <input type="checkbox" id="checked">
-  <label for="checked" class="label-click">
-  </label>
+
+  <div class="menu-container ss-shade">
+    <a href="https://github.com/Rashidy24/Frontend-Mastery" class="git-hup-link md-shade" aria-label="source code">
+      <i class="fa-brands fa-github"></i>
+    </a>
+
+    <label for="checked" class="label-click md-shade" aria-label="Bars">
+      <i class="fa-solid fa-bars-staggered"></i>
+    </label>
+  </div>
+
   <label for="checked" class="overlay">
   </label>
 
   <div class="links-container">
     <nav>
-      <label for="checked" class="Xmark">
+      <label for="checked" class="Xmark ss-shade">
         <i class="fa-solid fa-xmark fa-fade" style="--current-color: red;"></i>
       </label>
       
-      <a href="" aria-label="Html5">
+      <a href="" aria-label="Html5" class="ss-shade">
         <i class="fa-brands fa-html5" style="--current-color: #dd4b25;"></i>
       </a>
-      <a href="" aria-label="Css3">
+      <a href="" aria-label="Css3" class="ss-shade">
         <i class="fa-brands fa-css3" style="--current-color:#254bdd;"></i>
       </a>
-      <a href="" aria-label="Anmations">
+      <a href="" aria-label="Anmations" class="ss-shade">
         <i class="fa-solid fa-spinner fa-spin "  style="--current-color:#fff;"></i>
       </a>
-      <a href="" aria-label="Tools">
+      <a href="" aria-label="Tools" class="ss-shade">
         <i class="fa-solid fa-gear fa-shake" style="--current-color:#fff;"></i>
       </a>
     </nav>
   </div>
+  
 </nav>
 
+<!-- Main -->
+ <main>
+    <section class="templates">
+      <div class="container_fluid">
+        <div class="container">
+          <h2 class="main-heading ss-shade">templates</h2>
+          <div class="  html-structure ss-shade">
+            <h2 class="h2-header"><span class="upper">html</span> document</h2>
+            <div class="block-of-code">
+                <code data-reveal>&lt;!DOCTYPE html&gt;</code>
+                <code data-reveal>&lt;html&gt;</code>
+                <code data-reveal>&lt;head&gt;</code>
+                <code data-reveal class="main-gap">  &lt;title&gt;Title&lt;/title&gt;</code>
+                <code data-reveal class="main-gap">  &lt;link href="style.css" type="text/css" rel="stylesheet"&gt;</code>
+                <code data-reveal class="main-gap">  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>
+                <code data-reveal class="main-gap">  &lt;meta charset=&quot;utf-8&quot;&gt;</code>
+                <code data-reveal>&lt;/head&gt;</code>
+                <code data-reveal>&lt;body&gt;</code>
+                <code data-reveal class="main-gap">  (your contant..)</code>
+                <code data-reveal>&lt;/body&gt;</code>
+                <code data-reveal>&lt;/html&gt;</code>
+            </div>
+        </div>
+          
+        </div>
+      </div>
+    </section>
+
+    
+    <div class="elements">
+      <div class="container_fluid">
+        <div class="container">
+          <h2 class="main-heading ss-shade">elements</h2>
+
+
+          <div class="  ele-structure">
+            <div class="Coccd ss-shade">
+              <h2 class="h2-header">Headers</h2>
+              <div class="codeblock" data-reveal>
+                  <code><h1>&lt;h1&gt;</h1></code>
+              </div>
+              <div class="codeblock" data-reveal>
+                  <code><h2>&lt;h2&gt;</h2></code>
+              </div>
+              <div class="codeblock" data-reveal>
+                  <code><h3>&lt;h3&gt;</h3></code>
+              </div>
+              <div class="codeblock" data-reveal>
+                  <code><h4>&lt;h4&gt;</h4></code>
+              </div>
+              <div class="codeblock" data-reveal>
+                  <code><h5>&lt;h5&gt;</h5></code>
+              </div>
+              <div class="codeblock" data-reveal>
+                  <code><h6>&lt;h6&gt;</h6></code>
+              </div>
+            </div>
+
+            <div class="Coccd">
+
+              <div class="p-line">
+                
+                <div class="pragraph ss-shade xdd1">
+                  <h2 class="h2-header">Paragraph</h2>
+                  <div class="codeblock" data-reveal>
+                      <code>&lt;p&gt;content&lt;/p&gt;</code>
+                  </div>
+                </div>
+
+                <div class="line-break ss-shade xdd1" >
+                  <h2 class="h2-header">Line break</h2>
+                  <div class="codeblock" data-reveal>
+                    <code>&lt;br&gt;</code>
+                </div>
+                </div>
+
+              </div>
+
+
+              <div class="span ss-shade xdd1">
+                <h2 class="h2-header">span</h2>
+                <h3 class="small-line">Inline generic grouping element</h3>
+                <div class="block" data-reveal>
+                    <code>&lt;span class=&quot;kind&quot;&gt;</code>
+                    <code class="main-gap">content</code>
+                    <code>&lt;/span&gt;</code>
+                </div>
+              </div>
+            </div>
+
+            <div class="Coccd xdd22">
+
+              <div class="snippet ss-shade xdd1">
+                <h2 class="h2-header">Horizontal rule</h2>
+                <div class="codeblock" data-reveal="">
+                    <hr>
+                    <code>&lt;hr&gt;</code>
+                </div>
+              </div>
+
+              <div class="span ss-shade xdd1">
+                <h2 class="h2-header">Article</h2>
+                <h3 class="small-line">A self-contained unit of content</h3>
+                <div class="block" data-reveal>
+                  <code>&lt;article&gt;</code>
+                  <code class="main-gap">&lt;h2&gt;Header&lt;/h2&gt;</code>
+                  <code class="main-gap">content</code>
+                  <code>&lt;/article&gt;</code>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="Coccd xdd22">
+
+              <div class="span ss-shade xdd1">
+                <h2 class="h2-header">Division</h2>
+                <h3 class="small-line">Block-level generic grouping element</h3>
+                <div class="block" data-reveal="">
+                    <code>&lt;div class=&quot;kind&quot;&gt;</code>
+                    <code class="main-gap">content</code>
+                    <code>&lt;/div&gt;</code>
+                </div>
+              </div>
+
+              <div class="span ss-shade xdd1">
+                <h2 class="h2-header">Section</h2>
+                <h3 class="small-line">A unit of content</h3>
+                <div class="block" data-reveal>
+                  <code>&lt;section&gt;</code>
+                  <code class="main-gap">  &lt;h2&gt;Header&lt;/h2&gt;</code>
+                  <code class="main-gap">  content</code>
+                  <code>&lt;/section&gt;</code>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+ </main>
 <!-- <img src="assets/Imgs/fav (2).jpg" alt=""> -->
   <script src="assets/Js/main.js"></script>
 </body>
