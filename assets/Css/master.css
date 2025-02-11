@@ -36,10 +36,13 @@ a {
     width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #111420;
+    background-color: var(--main-color);
 }
 ::-webkit-scrollbar-track {
-    background-color: #1D1F26;
+    background-color: var(--sec-color);
+    box-shadow:
+    inset 0 1px 1px 1px rgba(0, 0, 0, 0.5),
+    0 1px 0 0 rgba(255, 255, 255, 0.1);
 }
 /*-----------------------------------*\
   #REUSED ITEMS
@@ -55,6 +58,9 @@ a {
 }
 .upper {
   text-transform:  uppercase;
+}
+.inside-gap {
+  margin-left: calc(var(--str-margin) + var(--str-margin));
 }
 .main-gap {
   margin-left: var(--str-margin);
@@ -83,6 +89,10 @@ a {
   font-weight: 500;
   margin: 24px 0;
   border-radius: var(--main-radius);
+}
+.xdd1 {
+  border-radius:  var(--main-radius);
+  color: var(--text-color); 
 }
 [data-reveal] {clip-path: inset(0 100% 0 0); }
 [data-reveal].revealed {animation: reveal 1.2s cubic-bezier(0.20, 0.38, 0.98, 1)
@@ -197,19 +207,18 @@ a {
       display: none;
     }
     .menu-container {
-      transform: translateX(100px);
+      margin-right: -100px;
       transition: .5s;
-      &:hover {
-        transform: translateX(0);
-      }
       position: fixed;
-      top: 10px;
-      right: 10px;
       background-color: var(--sec-color);
       display: flex;
       gap: 10px;
       padding: 10px;
       border-radius: 99999px;
+      z-index: 1;
+      &:hover {
+        margin-right: 0;
+      }
       .label-click , .git-hup-link {
         width: 40px;
         height: 40px;
@@ -232,10 +241,10 @@ a {
       width: 100vw;
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.2);
+      /* background-color: #fff; */
       backdrop-filter: blur(20px);
-      top: 0;
-      left: 0;
-      right: 0;
+      inset: 0;
+      z-index: 1;
     }
     .links-container {
       clip-path: inset(0 0 100% 0);
@@ -246,6 +255,7 @@ a {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      z-index: 2;
       > nav {
         position: relative;
         background-color: transparent;
@@ -305,7 +315,7 @@ main {
     section {
       &.templates {
         .container {
-          .html-structure {
+          .html-structure{
             color: var(--text-color);
             border-radius:  var(--main-radius);
             .block-of-code {
@@ -339,6 +349,11 @@ main {
       }
 }
 
+.ds {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .p-line {
   display: flex;
   gap: 20px;
@@ -362,6 +377,7 @@ main {
 }
 code {
   font-size: 16px;
+  color: var(--text-color);
 }
 .xdd22 {
   display: grid;
@@ -375,12 +391,81 @@ code {
     }
   }
 }
+.navigation {
+  padding-top: var(--str-margin);
+  .container {
+    display: flex;
+    gap: 20px;
+    h3 {
+      border-bottom: 1px dashed #ddd;
+      padding-bottom: var(--str-margin);
+      margin: var(--str-margin);
+    }
+    .span {
+      flex: 1;
+      min-width: 200px;
+    }
+  }
+}
+.text {
+  padding-top: var(--str-margin);
+}
+.text .snip-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+  .codeblock {
+    /* background-color: red; */
+    color: var(--text-color);
+    .ex-element {
+      border-bottom: 1px dashed #ddd;
+      padding-bottom: var(--str-margin);
+      /* margin: var(--str-margin); */
+    }
+    code {
+      display: block;
+      margin-top: var(--str-margin);
+    }
+  }
+}
+@media (min-width:540px) {
+  .hidden-header .menu-container {
+    top: 10px;
+    right: 10px;
+  }
+}
 @media (max-width:767px) {
+  .ele-structure {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .navigation .container {
+    flex-direction: column;
+  }
+  .text .snip-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+  }
+}
+@media (max-width:991px) {
+  .text .snip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .ele-structure {
     grid-template-columns: 1fr 1fr !important;
   }
 }
 @media (max-width:540px) {
+  .hidden-header .menu-container {
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 10px;
+    /* border-radius:0; */
+    width: 60%;
+    justify-content: space-between;
+    padding-inline: 15px;
+  }
   .ele-structure {
     grid-template-columns: 1fr !important;
   }

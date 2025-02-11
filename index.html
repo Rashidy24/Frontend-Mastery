@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" 
     content=" Get instant access to the ultimate HTML and CSS cheat sheet and take your frontend development skills to the next level.">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
     <link rel="website icon" href="assets/Imgs/fav (2).jpg" type="png/svg + xml">
-    <link rel="stylesheet" href="assets/Css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="assets/Css/master.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="">
 
 <!-- Page Pre Loader -->
 <div class="pre-loader" data-preloader>
@@ -96,7 +95,6 @@
         </div>
       </div>
     </section>
-
     
     <div class="elements">
       <div class="container_fluid">
@@ -127,7 +125,7 @@
               </div>
             </div>
 
-            <div class="Coccd">
+            <div class="Coccd ds">
 
               <div class="p-line">
                 
@@ -182,9 +180,9 @@
               
             </div>
 
-            <div class="Coccd xdd22">
+            <div class="Coccd xdd22 last-xdd">
 
-              <div class="span ss-shade xdd1">
+              <div class="span ss-shade">
                 <h2 class="h2-header">Division</h2>
                 <h3 class="small-line">Block-level generic grouping element</h3>
                 <div class="block" data-reveal="">
@@ -194,7 +192,7 @@
                 </div>
               </div>
 
-              <div class="span ss-shade xdd1">
+              <div class="span ss-shade">
                 <h2 class="h2-header">Section</h2>
                 <h3 class="small-line">A unit of content</h3>
                 <div class="block" data-reveal>
@@ -211,6 +209,220 @@
         </div>
       </div>
     </div>
+
+    <div class="navigation">
+        <div class="container_fluid">
+          <div class="container">
+
+            <div class="span ss-shade xdd1">
+              <h2 class="h2-header">Figure</h2>
+              <div class="block" data-reveal="">
+                  <code>&lt;figure&gt;</code>
+                  <code class="main-gap">content</code>
+                  <code class="main-gap">&lt;figcaption&gt;Caption&lt;/figcaption&gt;</code>
+                  <code>&lt;/figure&gt;</code>
+              </div>
+            </div>
+
+            <div class="span ss-shade xdd1">
+              <h2 class="h2-header">Navigation</h2>
+                <h3 class="small-line">See navigation bar at the top.</h3>
+              <div class="block" data-reveal>
+                <code>&lt;nav&gt;</code>
+                <code class="main-gap">    &lt;ul&gt;</code>
+                <code class="inside-gap">        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First&lt;/a&gt;&lt;/li&gt;</code>
+                <code class="inside-gap">        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second&lt;/a&gt;&lt;/li&gt;</code>
+                <code class="inside-gap">        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third&lt;/a&gt;&lt;/li&gt;</code>
+                <code class="main-gap">    &lt;/ul&gt;</code>
+                <code>&lt;/nav&gt;</code>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <div class="text">
+      <div class="container_fluid">
+        <div class="container">
+          <h2 class="h2-header">text</h2>
+          <div class="snip-grid ss-shade">
+            <div class="codeblock">
+                <div class="ex-element">
+                    <strong>strong</strong>
+                </div>
+                <code>&lt;strong&gt;strong&lt;/strong&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <em>emphasized</em>
+                </div>
+                <code>&lt;em&gt;emphasized&lt;/em&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <i>semantic</i>
+                </div>
+                <code>&lt;i&gt;semantic&lt;/i&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <s>strikethrough</s>
+                </div>
+                <code>&lt;s&gt;strikethrough&lt;/s&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <abbr title="abbreviation">abbr</abbr>
+                </div>
+                <code>&lt;abbr title=&quot;abbreviation&quot;&gt;abbr&lt;/abbr&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <mark>mark</mark>
+                </div>
+                <code>&lt;mark&gt;mark&lt;/mark&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <u>underline</u>
+                </div>
+                <code>&lt;u&gt;underline&lt;/u&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    x
+                    <sup>sup</sup>
+                </div>
+                <code>&lt;sup&gt;sup&lt;/sup&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    x
+                    <sub>sub</sub>
+                </div>
+                <code>&lt;sub&gt;sub&lt;/sub&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <q>inline quote</q>
+                </div>
+                <code>&lt;q&gt;inline quote&lt;/q&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <time datetime="2017-05-18T15:31">May 18</time>
+                </div>
+                <code>&lt;time datetime=&quot;2017-05-18T13:30&quot;&gt;<br>&nbsp;&nbsp;May 18<br>&lt;/time&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <blockquote>block quote</blockquote>
+                </div>
+                <code>&lt;blockquote&gt;block quote&lt;/blockquote&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <dfn>term</dfn> definition
+                </div>
+                <code>&lt;dfn&gt;term&lt;/dfn&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <cite>citation</cite>
+                </div>
+                <code>&lt;cite&gt;citation&lt;/cite&gt;</code>
+            </div>
+            <div class="codeblock">
+                <div class="ex-element">
+                    <data value="42">data</data>
+                </div>
+                <code>&lt;data value="42"&gt;data&lt;/data&gt;</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="code-form">
+      <div class="container_fluid">
+        <div class="container">
+          <div class="  code-structure">
+
+
+            <div class="code ss-shade">
+              <h2 class="h2-header">Code</h2>
+                <div class="block">
+                    <div class="ex-element">
+                        <code>code()</code>
+                    </div>
+                    <code>&lt;code&gt;code()&lt;/code&gt;</code>
+                </div>
+                <div class="block">
+                    <div class="ex-element">
+                        <samp>sample output</samp>
+                    </div>
+                    <code>&lt;samp&gt;sample output&lt;/samp&gt;</code>
+                </div>
+                <div class="block">
+                    <div class="ex-element">
+                        Press
+                        <kbd>Ctrl</kbd>+
+                        <kbd>S</kbd>
+                    </div>
+                    <code>&lt;kbd&gt;Ctrl&lt;/kbd&gt;</code>
+                </div>
+                <div class="block">
+                    <div class="ex-element">
+                        <var>variable</var>
+                    </div>
+                    <code>&lt;var&gt;variable&lt;/var&gt;</code>
+                </div>
+            </div>
+
+            <div class="forms ss-shade">
+              <h2>Forms</h2>
+                <div class="codeblock">
+                    <div class="ex-form">
+                        <form action="" method="get">
+                            <label for="html-elements-forms-name">Name:</label>
+                            <input type="text" id="html-elements-forms-name" name="name">
+                            <input type="submit" value="Save">
+                        </form>
+                    </div>
+                    <code>&lt;form action=&quot;&quot; method=&quot;get&quot;&gt;</code>
+                    <code>  &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;</code>
+                    <code>  &lt;input id=&quot;name&quot; name=&quot;name&quot;&gt;</code>
+                    <code>  &lt;input type=&quot;submit&quot; value=&quot;Save&quot;&gt;</code>
+                    <code>&lt;/form&gt;</code>
+                </div>
+                <div class="codeblock">
+                    <div class="ex-form">
+                        <form action="" method="post">
+                            <fieldset>
+                                <legend>Title</legend>
+                                <label for="html-elements-forms-field">Label:</label>
+                                <input type="text" id="html-elements-forms-field" name="field">
+                                <input type="submit" value="Save">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <code>&lt;form action=&quot;&quot; method=&quot;post&quot;&gt;</code>
+                    <code>  &lt;fieldset&gt;</code>
+                    <code>    &lt;legend&gt;Title&lt;/legend&gt;</code>
+                    <code>    &lt;label for=&quot;fid&quot;&gt;Label:&lt;/label&gt;</code>
+                    <code>    &lt;input id=&quot;fid&quot; name=&quot;field&quot;&gt;</code>
+                    <code>    &lt;input type=&quot;submit&quot; value=&quot;Save&quot;&gt;</code>
+                    <code>  &lt;/fieldset&gt;</code>
+                    <code>&lt;/form&gt;</code>
+                </div>
+
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    </div> -->
  </main>
 <!-- <img src="assets/Imgs/fav (2).jpg" alt=""> -->
   <script src="assets/Js/main.js"></script>
